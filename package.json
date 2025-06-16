@@ -1,0 +1,36 @@
+{
+  "name": "web-browsing-mcp-playwright",
+  "version": "1.0.0",
+  "description": "MCP server for controlling web browsers via Playwright (Single user support)",
+  "main": "src/mcpserver.ts",
+  "type": "module",
+  "scripts": {
+    "start": "BROWSER_TYPE=chrome node --import tsx src/mcpserver.ts",
+    "start-c": "BROWSER_TYPE=chrome node --import tsx src/mcpserver.ts",
+    "start-f": "BROWSER_TYPE=firefox node --import tsx src/mcpserver.ts",
+    "start-s": "BROWSER_TYPE=webkit node --import tsx src/mcpserver.ts"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.53.0",
+    "playwright": "^1.53.0",
+    "express": "^5.1.0",
+    "zod": "^3.25.6",
+    "tsx": "^4.20.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.13.14",
+    "typescript": "^5.3.0"
+  },
+  "keywords": [
+    "mcp",
+    "playwright",
+    "chrome",
+    "firefox",
+    "webkit",
+    "automation",
+    "browser"
+  ],
+  "author": "risuai",
+  "license": "MIT"
+}
